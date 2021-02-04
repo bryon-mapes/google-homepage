@@ -37,18 +37,37 @@ button {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+  }
+
+img {
+    display: block;
+    width: 100%;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
 /* Top Navigation Bar */
 .nav {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 24px;
-    font-size: 21pxm;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .nav-link {
-    margin-right: 10px;
+    margin-right: 1.5rem;
+    opacity: 0.85;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 .nav-grid-btn {
@@ -61,31 +80,43 @@ button {
     opacity: 0.5;
 }
 
+.nav-grid-btn:hover,
+.nav-grid-btn:focus {
+    opacity: 0.85;
+}
+
 .nav-button-signin {
-    padding: 11px 16px;
+    padding: 0.7rem 1rem;
     border-radius: 3px;
-    margin-right: 48px;
+    margin-right: 3rem;
     background-color: rgb(69, 133, 244);
     color: #fff;
     font-weight: bold;
     opacity: 0.95;
 }
 
-/* Middle Logo Search Content */
+.nav-button-signin:hover,
+.nav-button-signin:focus {
+    opacity: 1;
+}
+
+/* Middle Content */
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 240px;
+    margin-top: 15rem;
 }
 
+/* Middle Content Logo */
 .logo {
     width: 272px;
     height: 92px;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
+/* Middle Content Searchbar */
 .searchbar {
     display: flex;
     align-items: center;
@@ -95,3 +126,106 @@ button {
     border: 0.1px solid var(--border-color);
     border-radius: 30px;
 }
+
+.searchbar:hover,
+.searchbar:focus-within {
+    border-color: white;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.search-input {
+    width: 90%;
+    font-size: 1.6rem;
+}
+
+.microphone-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Middle Content Search Buttons */
+.search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4rem;
+}
+
+.button-search {
+    min-width: 54px;
+    height: 36px;
+    padding: 0 2rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 0.7rem;
+    background-color: var(--button-search-background);
+    color: var(--button-search-font);
+    font-size: 1.4rem;
+}
+
+.button-search:hover {
+    border-color: #dadce0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+  
+.button-search:focus {
+    border-color: blue;
+}
+
+/* Bottom Footer Bar */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    background: var(--footer-background);
+    color: var(--footer-font);
+    font-size: 1.4rem;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+}
+
+.right-section {
+    margin-right: 3rem;
+}
+
+.footer-link {
+    display: block;
+    padding: 1rem 0 1rem 3rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: var(--footer-font-hover);
+}
+
+.footer-link:active {
+    color: var(--footer-font-active);
+}
+
+@media (max-width: 660px) {
+    .footer {
+      flex-direction: column;
+    }
+  
+    .searchbar {
+      width: 80%;
+    }
+  
+    html {
+      font-size: 50%;
+    }
+  }
