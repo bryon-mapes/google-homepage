@@ -219,14 +219,18 @@ input {
 
 @media (max-width: 660px) {
     .footer {
-      flex-direction: column;
+        /* Sets the flex direction so they are
+        displayed vertically, as a column */
+        flex-direction: column;
     }
-  
     .searchbar {
-      width: 80%;
+        /* Shrink the searchbar to handle the
+        limited width */
+        width: 80%;
     }
-  
     html {
-      font-size: 50%;
+        /* Adjust the font size and scale it
+        down by 50% for a smaller screen*/
+        font-size: 50%;
     }
-  }
+}
