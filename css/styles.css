@@ -16,7 +16,8 @@
     margin: 0;
 }
 
-/* I am not a fan of this - rework */
+/* Set a base font size of 62.5% so I can
+use rems in a similar way to px */
 html {
     font-size: 62.5%;
 }
