@@ -1,6 +1,6 @@
-/* Almost the same as html, I just don't
-fully understand what that is, fix that
-tomorrow. */
+/* Root is the same as html with the only
+difference being that root will override
+html due to a greater specificity */
 :root {
     --border-color: #ddd;
     --button-search-font: #3c4043;
@@ -11,6 +11,7 @@ tomorrow. */
     --footer-font-active: #ea4335;
 }
 
+/*  */
 *,
 ::before,
 ::after {
