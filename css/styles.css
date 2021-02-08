@@ -11,7 +11,11 @@ html due to a greater specificity */
     --footer-font-active: #ea4335;
 }
 
-/*  */
+/* NOTE: I want to play around with this a bit
+more to get a good grasp on it */
+/* Apply the following to all elements or before
+content of all elements or after content of all
+elements */
 *,
 ::before,
 ::after {
