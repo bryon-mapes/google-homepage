@@ -77,10 +77,12 @@ input {
     opacity: 0.85;
 }
 
+/* Top Navigation Links : Hover */
 .nav-link:hover {
     text-decoration: underline;
 }
 
+/* Top Navigation Grid Button */
 .nav-grid-btn {
     width: 30px;
     height: 30px;
@@ -91,6 +93,7 @@ input {
     opacity: 0.5;
 }
 
+/* Top Navigation Grid Button : Hover,Focus */
 .nav-grid-btn:hover,
 .nav-grid-btn:focus {
     opacity: 0.85;
